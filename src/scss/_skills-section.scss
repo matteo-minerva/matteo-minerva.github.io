@@ -1,0 +1,52 @@
+.skills-section {
+  background-color: $white;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: black;
+
+  border-radius: 5px 5px 0 0;
+  padding: 3rem;
+  padding-bottom: 3.5rem;
+
+  @include media(">=tablet") {
+    padding: 3rem 3.5rem;
+  }
+
+  @include media(">=desktop") {
+    padding: 4.25rem 5.75rem;
+  }
+
+  &__item {
+    margin-top: 1.5rem;
+
+    @include media(">=tablet") {
+      margin-top: 2rem;
+    }
+  }
+
+  &__skill {
+    align-items: center;
+  }
+
+  &__skill-name {
+    padding-left: 0;
+  }
+
+  &__skill-percentage {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+
+    div {
+      padding: 0.1rem 0.4rem;
+      background-color: $gray;
+      border-radius: 3px;
+    }
+  }
+
+  &__bar {
+    margin-top: 0.3rem;
+  }
+}

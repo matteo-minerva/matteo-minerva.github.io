@@ -1,0 +1,61 @@
+.hero-section {
+  position: relative;
+  height: calc(60vh - 148px);
+  color: $white;
+  padding-bottom: 30rem;
+
+  &__main-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+
+  &__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  &__copy {
+    padding-top: 4rem;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8;
+
+    @include media(">=tablet") {
+      max-width: 445px;
+    }
+
+    @include media(">=tablet") {
+      max-width: 460px;
+    }
+  }
+
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: -10%;
+    right: -30%;
+
+    width: 273px;
+    height: 255px;
+
+    background-image: url("../images/header-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include media(">=tablet") {
+      right: -15%;
+    }
+
+    @include media(">=desktop") {
+      width: 406px;
+      height: 379px;
+      bottom: -15%;
+      right: -17%;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $black;
+}
+
+/* Altrimenti l'immagine del cellulare verrebbe tagliata male*/
+html,
+body {
+  overflow-x: hidden;
+
+  // @include media(">=desktop") {
+  //   overflow-x: visible;
+  // }
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  padding: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &-icon {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.wrapper {
+  max-width: 18.75rem;
+  margin: 0 auto;
+
+  @include media(">=tablet") {
+    max-width: 37.5rem;
+  }
+
+  @include media(">=desktop") {
+    max-width: 56.25rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.25rem;
+
+  @include media(">=desktop") {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+
+  @include media(">=desktop") {
+    font-size: 1.63rem;
+  }
+}
+
+strong {
+  color: $blue;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  transition: height 0.5s linear;
+
+  @include media(">=desktop") {
+    height: auto;
+    justify-content: flex-end;
+    padding: 3.75rem 0 8rem 0;
+  }
+
+  &.collapse.show {
+    height: 100vh;
+
+    @include media(">=desktop") {
+      height: auto;
+    }
+  }
+
+  .navbar-nav {
+    transform: translateY(-50%);
+    transition: all 0.3s;
+
+    .nav-item {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      padding: 0;
+      font-size: 2.25rem;
+
+      @include media(">=desktop") {
+        font-size: 1.375rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 2.3rem;
+      }
+
+      .nav-link {
+        color: $white;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background: darken($blue, 10%);
+          transform: scaleX(0);
+          transition: transform 0.5s ease;
+        }
+
+        &:hover:before {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+.progress {
+  padding: 0;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 15px;
+
+  &-bar {
+    background-color: $black;
+  }
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+}

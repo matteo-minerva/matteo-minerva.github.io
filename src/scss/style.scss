@@ -1,0 +1,17 @@
+/* Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400&display=swap");
+
+/* Bootstrap*/
+@import "bootstrap";
+
+/* Utilities*/
+@import "mixins";
+@import "variables";
+
+/* Actual CSS*/
+@import "globals";
+@import "hero-section";
+@import "skills-section";
+@import "projects-section";
+@import "education-section";
+@import "contacts-section";

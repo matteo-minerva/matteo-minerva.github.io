@@ -1,0 +1,73 @@
+.education-section {
+  position: relative;
+  background-color: $white;
+  color: $black;
+  padding: 5rem 3rem 3.5rem 3rem;
+
+  @include media(">=tablet") {
+    padding: 3rem 3.5rem;
+  }
+
+  @include media(">=desktop") {
+    padding: 4.25rem 5.75rem;
+  }
+
+  &__title {
+    margin-bottom: 2.5rem;
+
+    @include media(">=tablet") {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__item {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+
+    @include media(">=desktop") {
+      font-size: 1rem;
+    }
+
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__date {
+    display: inline;
+    padding: 0.2rem 0.3rem;
+    background-color: $gray;
+    border-radius: 3px;
+    font-weight: 300;
+  }
+
+  &__school {
+    margin-top: 0.3rem;
+  }
+
+  &:before {
+    @include media(">=tablet") {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -50%;
+      transform: translate(-45%, -45%);
+
+      width: 23.8rem;
+      height: 17.2rem;
+
+      background-image: url("../images/graduation-bg.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    @include media(">=desktop") {
+      transform: translate(-55%, -45%);
+
+      width: 28.5rem;
+      height: 20.6rem;
+      background-size: 120%;
+    }
+  }
+}
