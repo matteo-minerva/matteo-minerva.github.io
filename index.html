@@ -10,83 +10,59 @@
   </head>
 
   <body class="container">
+    <nav class="navbar">
+      <ul class="wrapper">
+        <li class="navbar__link">
+          <a href="#skills">
+            <div class="navbar__icon">
+              <img src="dist/images/skills-icon.png" alt="Skills" />
+            </div>
+            <div class="navbar__text">skills</div>
+          </a>
+        </li>
+
+        <li class="navbar__link">
+          <a href="#education">
+            <div class="navbar__icon">
+              <img src="dist/images/education-icon.png" alt="Education" />
+            </div>
+            <div class="navbar__text">education</div>
+          </a>
+        </li>
+
+        <li class="navbar__link">
+          <a href="#projects">
+            <div class="navbar__icon">
+              <img src="dist/images/projects-icon.png" alt="Projects" />
+            </div>
+            <div class="navbar__text">portfolio</div>
+          </a>
+        </li>
+
+        <li class="navbar__link">
+          <a href="#contacts">
+            <div class="navbar__icon">
+              <img src="dist/images/email-icon.png" alt="Contacts" />
+            </div>
+            <div class="navbar__text">contacts</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <div class="wrapper">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarToggler"
-            aria-controls="navbarToggler"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"
-              ><svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <rect
-                  width="40"
-                  height="40"
-                  transform="matrix(1 0 0 -1 0 40)"
-                  fill="url(#pattern0)"
-                />
-                <defs>
-                  <pattern
-                    id="pattern0"
-                    patternContentUnits="objectBoundingBox"
-                    width="1"
-                    height="1"
-                  >
-                    <use xlink:href="#image0" transform="scale(0.00416667)" />
-                  </pattern>
-                  <image
-                    id="image0"
-                    width="240"
-                    height="240"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAYAAAA+VemSAAAFZ0lEQVR4Ae3W0QnEMAwFQfVfsn8UXEVYPAfXwMjLy4wfAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAgZ8F9uz6M/AGmm9gHK55OHdzt/sGBOwLxBdY+A0IOHw8K2yFBSxgCxx+AwIOH88CW2ABC9gCh9+AgMPHs8AWWMACtsDhNyDg8PEssAUWsIAtcPgNCDh8PAtsgQUsYAscfgMCDh/PAltgAQvYAoffgIDDx7PAFljAArbA4Tcg4PDxLLAFFrCALXD4DQg4fDwLbIEFLGALHH4DAg4fzwJbYAEL2AKH34CAw8ezwBZYwAK2wOE3IODw8SywBRawgC1w+A0IOHw8C2yBBSxgCxx+AwIOH88CW2ABC9gCh9+AgMPHs8AWWMACtsDhNyDg8PEssAUWsIAtcPgNCDh8PAtsgQUsYAscfgMCDh/PAltgAQvYAoffgIDDx7PAFnj8CBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAg8LrAnl1/Bt5A8w2MwzUP527udt+AgH2B+AILvwEBh49nha2wgAVsgcNvQMDh41lgCyxgAVvg8BsQcPh4FtgCC1jAFjj8BgQcPp4FtsACFrAFDr8BAYePZ4EtsIAFbIHDb0DA4eNZYAssYAFb4PAbEHD4eBbYAgtYwBY4/AYEHD6eBbbAAhawBQ6/AQGHj2eBLbCABWyBw29AwOHjWWALLGABW+DwGxBw+HgW2AILWMAWOPwGBBw+ngW2wAIWsAUOvwEBh49ngS2wgAVsgcNvQMDh41lgCyxgAVvg8BsQcPh4FtgCC1jAFjj8BgQcPp4FtsACFrAFDr8BAYePZ4EtsIAFbIHDb0DA4eNZYAssYAFb4PAbEHD4eBbYAo8fAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIEXhfYs+vPwBtovoFxuObh3M3d7hsQsC8QX2DhNyDg8PGssBUWsIAtcPgNCDh8PAtsgQUsYAscfgMCDh/PAltgAQvYAoffgIDDx7PAFljAArbA4Tcg4PDxLLAFFrCALXD4DQg4fDwLbIEFLGALHH4DAg4fzwJbYAEL2AKH34CAw8ezwBZYwAK2wOE3IODw8SywBRawgC1w+A0IOHw8C2yBBSxgCxx+AwIOH88CW2ABC9gCh9+AgMPHs8AWWMACtsDhNyDg8PEssAUWsIAtcPgNCDh8PAtsgQUsYAscfgMCDh/PAltgAQvYAoffgIDDx7PAFljAArbA4Tcg4PDxLLAFFrCALXD4DQg4fDwLbIEFLGALHH4DAg4fzwJb4PEjQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAg8LPAB7VCJaMfk86aAAAAAElFTkSuQmCC"
-                  />
-                </defs>
-              </svg>
-            </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">Contacts</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
       <header class="hero-section">
         <div class="hero-section__title">
-          <h1 class="hero-section__main-title">Matteo Minerva</h1>
+          <h1 class="hero-section__main-title">
+            I build <strong>amazing</strong> projects
+          </h1>
           <div class="hero-section__subtitle">web developer</div>
         </div>
 
         <div class="hero-section__copy">
           <p class="hero-section__introduction">
-            <em>Greetings</em>, I am Matteo and I am a
-            <strong>front-end web developer</strong> who lives in the suburbs of
-            Milan, Italy.
+            <em>Greetings</em>, I am Matteo Minerva and I am a front-end web
+            developer who lives in the suburbs of Milan, Italy.
           </p>
 
           <div class="hero-section__body">
