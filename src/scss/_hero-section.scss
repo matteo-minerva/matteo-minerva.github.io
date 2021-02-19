@@ -1,9 +1,18 @@
 .hero-section {
   position: relative;
-  height: calc(60vh - 148px);
+  height: calc(100vh - 60px);
   color: $white;
-  padding-top: 5rem;
-  padding-bottom: 30rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  @include media(">=tablet") {
+    padding-top: 8rem;
+    height: auto;
+  }
+
+  @include media(">=desktop") {
+    padding-top: 15rem;
+  }
 
   &__main-title {
     margin-bottom: 0;

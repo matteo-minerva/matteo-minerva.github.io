@@ -49,7 +49,7 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- Favicon end -->
 
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
     <title>Matteo Minerva | Front-end developer</title>
   </head>
 
@@ -372,23 +372,30 @@
               class="col-12"
               type="text"
               placeholder="Your name"
+              autocomplete="off"
+              pattern="(.|\s)*\S(.|\s)*"
+              title="Required field. The field should not be empty."
+              required
             />
             <input
               name="email"
               class="col-12"
               type="email"
               placeholder="Your email"
+              autocomplete="off"
+              required
             />
-            <textarea name="message" class="col-12" placeholder="Your message">
-            </textarea>
+            <textarea
+              name="message"
+              class="col-12"
+              placeholder="Your message"
+              required
+            ></textarea>
 
             <button type="submit" class="btn btn-submit">SUBMIT</button>
           </form>
         </div>
       </section>
-
-      <script src="dist/js/bootstrap.bundle.min.js"></script>
-      <script src="dist/js/app.js"></script>
     </div>
   </body>
 </html>
