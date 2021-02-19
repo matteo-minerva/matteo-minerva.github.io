@@ -23,7 +23,6 @@ Il sito non è altro che il mio portfolio personale. È stato realizzato come pr
 ### Realizzato con
 
 - [Bootstrap](https://getbootstrap.com/)
-- JavaScript
 
 <!-- CONTATTI -->
 
