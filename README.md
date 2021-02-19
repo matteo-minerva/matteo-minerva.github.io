@@ -17,12 +17,13 @@
 
 ## About
 
-<a href="matteo-minerva.github.io"><img src="https://i.imgur.com/KTFIiZE.png"/></a>
+<a href="https://matteo-minerva.github.io/"><img src="https://i.imgur.com/KTFIiZE.png"/></a>
 Il sito non è altro che il mio portfolio personale. È stato realizzato come progetto HTML & CSS per <a href="https://start2impact.it/">start2impact</a>.
 
 ### Realizzato con
 
 - [Bootstrap](https://getbootstrap.com/)
+- [PurgeCSS](https://purgecss.com/)
 
 <!-- CONTATTI -->
 
