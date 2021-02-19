@@ -127,6 +127,24 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+
+code {
+  font-family: var(--bs-font-monospace);
+  font-size: 1em;
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+
+code {
+  font-size: 0.875em;
+  color: #d63384;
+  word-wrap: break-word;
+}
+
+a > code {
+  color: inherit;
+}
+
 img,
 svg {
   vertical-align: middle;
@@ -669,7 +687,7 @@ strong {
   }
 }
 
-.hero-section {
+.header-section {
   position: relative;
   height: calc(100vh - 60px);
   color: #fffaff;
@@ -678,30 +696,30 @@ strong {
 }
 
 @media only screen and (min-width: 48rem) {
-  .hero-section {
+  .header-section {
     padding-top: 8rem;
     height: auto;
   }
 }
 
 @media only screen and (min-width: 75rem) {
-  .hero-section {
+  .header-section {
     padding-top: 15rem;
   }
 }
 
-.hero-section__main-title {
+.header-section__main-title {
   margin-bottom: 0;
   line-height: 1.5;
 }
 
-.hero-section__subtitle {
+.header-section__subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
 }
 
-.hero-section__copy {
+.header-section__copy {
   padding-top: 4rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -710,18 +728,18 @@ strong {
 }
 
 @media only screen and (min-width: 48rem) {
-  .hero-section__copy {
+  .header-section__copy {
     max-width: 445px;
   }
 }
 
 @media only screen and (min-width: 48rem) {
-  .hero-section__copy {
+  .header-section__copy {
     max-width: 460px;
   }
 }
 
-.hero-section::before {
+.header-section::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -736,13 +754,13 @@ strong {
 }
 
 @media only screen and (min-width: 48rem) {
-  .hero-section::before {
+  .header-section::before {
     right: -15%;
   }
 }
 
 @media only screen and (min-width: 75rem) {
-  .hero-section::before {
+  .header-section::before {
     width: 406px;
     height: 379px;
     bottom: -15%;
@@ -771,6 +789,10 @@ strong {
   .skills-section {
     padding: 4.25rem 5.75rem;
   }
+}
+
+.skills-section__content {
+  padding: 0;
 }
 
 .skills-section__item {
