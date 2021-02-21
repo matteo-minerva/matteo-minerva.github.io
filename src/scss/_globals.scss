@@ -1,177 +1,177 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: $black;
+    background-color: $black;
 }
 
-/* Altrimenti l'immagine del cellulare verrebbe tagliata male*/
+/* Otherwise image gets cut*/
 html,
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 a {
-  color: $white;
-  text-decoration: none;
+    color: $white;
+    text-decoration: none;
 
-  &:hover {
-    color: inherit;
-  }
+    &:hover {
+        color: inherit;
+    }
 }
 
 .wrapper {
-  max-width: 18.75rem;
-  margin: 0 auto;
+    max-width: 18.75rem;
+    margin: 0 auto;
 
-  @include media(">=tablet") {
-    max-width: 37.5rem;
-  }
+    @include media(">=tablet") {
+        max-width: 37.5rem;
+    }
 
-  @include media(">=desktop") {
-    max-width: 56.25rem;
-  }
+    @include media(">=desktop") {
+        max-width: 56.25rem;
+    }
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 
 h1 {
-  font-size: 2.25rem;
+    font-size: 2.25rem;
 
-  @include media(">=desktop") {
-    font-size: 3rem;
-  }
+    @include media(">=desktop") {
+        font-size: 3rem;
+    }
 }
 
 h2 {
-  font-size: 1.5rem;
-  text-align: center;
-
-  @include media(">=desktop") {
-    font-size: 1.63rem;
-  }
-}
-
-strong {
-  color: $blue;
-}
-
-.progress {
-  padding: 0;
-  background-color: $white;
-  border: 1px solid $black;
-  border-radius: 15px;
-
-  &-bar {
-    background-color: $black;
-  }
-}
-
-.btn {
-  margin: 0;
-  padding: 0;
-}
-
-.navbar {
-  z-index: 1;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-
-  height: 60px;
-  background-color: $blue;
-  color: $white;
-
-  @include media(">=tablet") {
-    height: 70px;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-
-  @include media(">=desktop") {
-    position: fixed;
-    top: 0;
-    text-transform: capitalize;
-    height: 100px;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-  }
-
-  &__link {
-    list-style: none;
-    width: 25%;
+    font-size: 1.5rem;
     text-align: center;
 
     @include media(">=desktop") {
-      width: fit-content;
-      padding: 0;
-      padding-bottom: 4px;
+        font-size: 1.63rem;
+    }
+}
 
-      color: $white;
-      position: relative;
+strong {
+    color: $blue;
+}
 
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
+.progress {
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: 15px;
+
+    &-bar {
+        background-color: $black;
+    }
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+    height: 60px;
+    background-color: $blue;
+    color: $white;
+
+    @include media(">=tablet") {
+        height: 70px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    @include media(">=desktop") {
+        position: fixed;
+        top: 0;
+        text-transform: capitalize;
+        height: 100px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
-        height: 3px;
-        background: darken($blue, 10%);
-        transform: scaleX(0);
-        transition: transform 0.5s ease;
-      }
-
-      &:hover:before {
-        transform: scaleX(1);
-      }
-    }
-  }
-
-  &__icon img {
-    max-height: 15px;
-
-    @include media(">=tablet") {
-      max-height: 20px;
+        padding: 0;
     }
 
-    @include media(">=desktop") {
-      display: none;
-    }
-  }
+    &__link {
+        list-style: none;
+        width: 25%;
+        text-align: center;
 
-  &__text {
-    font-family: "Roboto", sans-serif;
-    letter-spacing: normal;
-    font-weight: 400;
-    font-size: 12px;
+        @include media(">=desktop") {
+            width: fit-content;
+            padding: 0;
+            padding-bottom: 4px;
 
-    @include media(">=tablet") {
-      padding-top: 0.2rem;
-      font-size: 14px;
+            color: $white;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 3px;
+                background: darken($blue, 10%);
+                transform: scaleX(0);
+                transition: transform 0.5s ease;
+            }
+
+            &:hover:before {
+                transform: scaleX(1);
+            }
+        }
     }
 
-    @include media(">=desktop") {
-      font-family: "Montserrat";
-      font-weight: 600;
-      font-size: 1.35rem;
+    &__icon img {
+        max-height: 15px;
+
+        @include media(">=tablet") {
+            max-height: 20px;
+        }
+
+        @include media(">=desktop") {
+            display: none;
+        }
     }
-  }
+
+    &__text {
+        font-family: "Roboto", sans-serif;
+        letter-spacing: normal;
+        font-weight: 400;
+        font-size: 12px;
+
+        @include media(">=tablet") {
+            padding-top: 0.2rem;
+            font-size: 14px;
+        }
+
+        @include media(">=desktop") {
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 1.35rem;
+        }
+    }
 }
